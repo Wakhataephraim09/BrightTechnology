@@ -1,0 +1,6 @@
+com\brighttech\backend\controller\HomeController.class
+com\brighttech\backend\BrightBackendApplication.class
+com\brighttech\backend\repository\ProductRepository.class
+com\brighttech\backend\model\Product.class
+com\brighttech\backend\controller\ProductController.class
+com\brighttech\backend\dto\OrderRequest.class

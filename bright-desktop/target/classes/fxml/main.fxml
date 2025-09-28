@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.brighttech.desktop.MainController">
+  <top>
+    <HBox fx:id="navbar" styleClass="navbar">
+      <ImageView fx:id="logo" fitHeight="40" pickOnBounds="true" preserveRatio="true"/>
+      <Button text="Services" />
+      <Button text="About" />
+      <Button text="Contacts" />
+      <Region HBox.hgrow="ALWAYS"/>
+      <Button text="Sign In"/>
+    </HBox>
+  </top>
+  <center>
+    <VBox spacing="10">
+      <StackPane>
+        <ImageView fx:id="sliderView" fitWidth="1000" fitHeight="300" />
+      </StackPane>
+      <Label text="Deals for you"/>
+      <FlowPane fx:id="dealsPane"/>
+      <Label text="Trending on Bright-Technology"/>
+      <FlowPane fx:id="trendingPane"/>
+    </VBox>
+  </center>
+</BorderPane>

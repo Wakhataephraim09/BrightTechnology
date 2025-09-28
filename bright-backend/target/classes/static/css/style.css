@@ -1,0 +1,287 @@
+﻿/* Basic page */
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: #ffffff;
+  color: #111;
+}
+
+/* Navbar gradient background */
+.navbar-gradient {
+  background: linear-gradient(90deg, #ff5858, #2b7cff);
+}
+.navbar-gradient .nav-link {
+  color: #fff !important;
+}
+
+/* Hero row & image */
+.hero-row {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  gap: 2rem;
+  align-items: center;
+  text-align: center; /* center text inside */
+}
+.hero-img {
+  height: 420px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.hero-caption {
+  background: rgba(0,0,0,0.45);
+  padding: 12px 20px;
+  border-radius: 6px;
+  color: #fff;
+  display: inline-block;
+  margin-top: 1rem;
+}
+.hero-text h1 { font-weight: 700; margin-bottom: .5rem; }
+.hero-text p.lead { color: #444; }
+
+/* Intro text above carousel */
+.intro-text h2 {
+  font-weight: 700;
+}
+.intro-text p.lead {
+  color: #333;
+}
+.intro-text p.small {
+  margin-top: 0.5rem;
+}
+
+/* Carousel images */
+.carousel-img {
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Deals horizontal scroller */
+.deals-row {
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+.deal-card {
+  min-width: 260px;
+  max-width: 260px;
+  flex: 0 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(10,10,10,0.06);
+}
+.deal-card img {
+  height: 160px;
+  object-fit: cover;
+}
+
+/* Trending cards */
+.card .card-img-top {
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer.bg-dark { margin-top: 40px; }
+
+/* small screens adjustments */
+@media (max-width: 767.98px) {
+  .hero-img { height: 220px; }
+  .hero-caption { display: none; }
+  .hero-row { gap: 1.25rem; }
+  .deal-card { min-width: 200px; max-width: 200px; }
+  .card .card-img-top { height: 140px; }
+  .carousel-img { height: 240px; }
+}
+
+/* Wrapper: only 2 cards visible & centered */
+.deals-wrapper,
+.trending-wrapper {
+  max-width: 600px;   /* controls how wide the section looks */
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative; /* needed for shadows */
+}
+
+/* The row becomes a flex track */
+.deals-row,
+.trending-row {
+  display: flex;
+  gap: 16px;
+  transition: transform 0.5s ease;
+}
+
+/* Each card takes half of wrapper */
+.deal-card {
+  flex: 0 0 calc(50% - 8px);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+/* Card images */
+.deal-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* 📱 Responsive: on small screens show only 1 card */
+@media (max-width: 768px) {
+  .deal-card {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* ====== Fade Shadows (indicating scroll) ====== */
+.deals-wrapper::before,
+.deals-wrapper::after,
+.trending-wrapper::before,
+.trending-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 40px;     /* shadow width */
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.deals-wrapper::before,
+.trending-wrapper::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(255,255,255,0.9), rgba(255,255,255,0));
+}
+
+.deals-wrapper::after,
+.trending-wrapper::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(255,255,255,0.9), rgba(255,255,255,0));
+}
+
+
+/* ========= GLOBAL BACKGROUND ========= */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); 
+  /* Futuristic dark gradient */
+  color: #fff;
+  background-attachment: fixed;
+}
+
+/* ========= HERO SECTION ========= */
+#hero {
+  background: rgba(0, 0, 0, 0.6); /* subtle overlay */
+  padding: 60px 0;
+}
+
+/* ========= INTRO TEXT ========= */
+.intro-text {
+  background: rgba(255, 255, 255, 0.05); /* soft glassy look */
+  border-radius: 12px;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ========= DEALS & TRENDING ========= */
+#deals,
+#trending {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  padding: 40px 20px;
+}
+
+/* ========= ABOUT ========= */
+#about {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 60px 20px;
+}
+
+/* ========= CONTACT ========= */
+#contact {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 60px 20px;
+}
+
+/* Custom buttons for Intro section */
+.btn-shop {
+  background-color: #0d6efd; /* Bootstrap primary blue */
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 22px;
+  border-radius: 6px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-shop:hover {
+  background-color: #0b5ed7; /* darker blue on hover */
+  color: #fff;
+}
+
+.btn-browse {
+  border: 2px solid #6c757d; /* gray outline */
+  color: #6c757d;
+  font-weight: 600;
+  padding: 10px 22px;
+  border-radius: 6px;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.btn-browse:hover {
+  background-color: #6c757d; /* gray fill on hover */
+  color: #fff;
+}
+
+.bg-gradient {
+  background: linear-gradient(135deg, #1d2b64, #f8cdda);
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  text-align: center;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+}
+
+.card img {
+  max-width: 100%;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+  color: #0a58ca;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+
