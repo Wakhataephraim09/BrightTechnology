@@ -1,5 +1,27 @@
-﻿# BrightTechnology
+# Bright Technology Web Platform
 
-Parent multi-module Maven project: bright-backend (Spring Boot) and bright-desktop (JavaFX).
-Android project under bright-android (Gradle).
-Place real images into the corresponding src/.../images folders when ready.
+A full-stack web application developed to demonstrate modern web development practices including frontend and backend integration.
+
+## Technologies Used
+- HTML
+- CSS
+- JavaScript
+- PHP
+- MySQL
+- React
+- Node.js
+
+## Features
+- Responsive web design
+- Database integration
+- Backend API functionality
+- User-friendly interface
+
+## Project Goals
+This project demonstrates my ability to design and build full-stack web applications using modern development frameworks.
+
+## Author
+Ephraim Wakhata
+
+GitHub: https://github.com/Wakhataephraim09
+LinkedIn: https://ke.linkedin.com/in/ephraim-wakhata-61b2b52b1
