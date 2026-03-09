@@ -20,6 +20,11 @@ A full-stack web application developed to demonstrate modern web development pra
 ## Project Goals
 This project demonstrates my ability to design and build full-stack web applications using modern development frameworks.
 
+## Screenshots
+
+![Homepage](screenshot1.png)
+![Dashboard](screenshot2.png)
+
 ## Author
 Ephraim Wakhata
 
