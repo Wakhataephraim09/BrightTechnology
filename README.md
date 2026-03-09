@@ -22,7 +22,7 @@ This project demonstrates my ability to design and build full-stack web applicat
 
 ## Screenshots
 
-![Homepage](screenshot1.png)
+![Homepage](Screenshot_20260309-233505.png)
 ![Dashboard](screenshot2.png)
 
 ## Author
