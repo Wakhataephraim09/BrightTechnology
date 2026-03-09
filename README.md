@@ -23,7 +23,7 @@ This project demonstrates my ability to design and build full-stack web applicat
 ## Screenshots
 
 ![Homepage](Screenshot_20260309-233505.png)
-![Dashboard](screenshot2.png)
+![Dashboard](Screenshot_20260309-233521.png)
 
 ## Author
 Ephraim Wakhata
